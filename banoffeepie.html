@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <title>Banoffee Pie</title>
+  </head>
+  <header>
+    <h1>Banoffee Pie</h1>
+  </header>
+  <body class="pagestyling">
+    <p>
+      The recipe below is my mum's recipe for Banoffee Pie. I think this is
+      probably one of the first things I learned how to bake
+    </p>
+
+    <h3>Ingredients:</h3>
+    <h4>For the base:</h4>
+    <ul>
+      <li>75g butter, melted (use more if necessary).</li>
+      <li>1 pack of Superwine biscuits,</li>
+    </ul>
+    <h4>For the filling and topping:</h4>
+    <ul>
+      <li>250g tub of cream cheese, room temperature</li>
+      <li>1 tin of highlander caramel</li>
+      <li>330ml bottle of cream</li>
+      <li>1 flake</li>
+      <li>2-3 bananas</li>
+      <li>Optional: 1 tbsp icing sugar</li>
+    </ul>
+
+    <hr />
+    <!-- Calculator to convert g to cups -->
+    <p><b>Grams to Cups Calculator</b> <br>
+      NOTE: Accuracy of the recipe outcome cannot be
+      guaranteed with this calculator
+    </p>
+    <form>
+      <input type="number" id="grams" placeholder="grams" />
+      <button type="submit" id="calc-button">Calculate!</button>
+    </form>
+    <p id="cups-output">grams is <span id="grams-converted"></span> cup(s)</p>
+    <hr />
+
+    <h3>Method:</h3>
+    <ol>
+      <li>Preheat oven to 180°C .</li>
+      <li>
+        Crush your Superwine biscuits using a rolling pin or food processer
+        until coarse-fine crumbs.
+      </li>
+      <li>
+        Mix melted butter with the biscuit crumbs until it has the consistency
+        of wet sand, more or less butter may be needed.
+      </li>
+      <li>
+        Press crumbs into your pie dish with an even thickness around the sides
+        and bottom, bake for 15-20 mins or until lightly golden. Allow to cool.
+      </li>
+      <li>
+        Mix together the cream cheese and caramel until they are homogenous.
+        Spread over the pie base and put in the fridge until ready to serve.
+      </li>
+      <li>
+        Just before serving, slice up your bananas and whip the cream, if you
+        prefer sweetened cream add the icing sugar here.
+      </li>
+      <li>
+        Place the bananas in an even layer on top the caramel, top with the
+        whipped cream.
+      </li>
+      <li>Crumble the flake bar on top, cut, and enjoy!</li>
+    </ol>
+
+    <h3>Notes:</h3>
+    <ul>
+      <li>
+        If the cream cheese is not room temperature it <b>will</b> be chunky and
+        your filling will not be smooth
+      </li>
+      <li>
+        How many bananas you need really depends on the size of them, use your
+        best judgement.
+      </li>
+    </ul>
+    <!-- javascript hehe -->
+    <div id="review-box">
+      <h3>Leave me a review!</h3>
+      <form>
+        <label for="name-input">Name:</label>
+        <input
+          type="text"
+          for="name-input"
+          id="name-input"
+          placeholder="Enter your name here"
+        /><br />
+        <label for="star-rating">How many stars do you rate this recipe?</label>
+        <input
+          type="number"
+          name="star-rating"
+          id="star-rating"
+          placeholder="1-5"
+        /><br />
+        <label for="review-text">Type your review here!</label><br />
+        <textarea
+          id="review-text"
+          name="review-text"
+          cols="30"
+          rows="8"
+          placeholder="Tell me what you think!"
+        ></textarea
+        ><br />
+        <button id="review-button" type="submit">Submit!</button>
+        <hr />
+        <p id="review-display"></p>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <title>Chocolate Chunk Cookies</title>
+  </head>
+  <header>
+    <h1>Chocolate Chunk Cookies</h1>
+  </header>
+  <body class="pagestyling">
+    <p>
+      The recipe below is for my reliable, go-to chocolate chunk cookies. These
+      cookies are always a hit with my friends and family!
+    </p>
+
+    <h3>Ingredients:</h3>
+    <ul>
+      <li>225g of butter, melted</li>
+      <li>415g plain flour</li>
+      <li>1.5 tsp baking powder</li>
+      <li>1 tsp baking soda</li>
+      <li>320g brown sugar</li>
+      <li>100g white sugar</li>
+      <li>2 eggs</li>
+      <li>2 tsp vanilla extract</li>
+      <li>340g chocolate, I prefer whittakers 50% dark block</li>
+    </ul>
+
+    <hr />
+    <!-- Calculator to convert g to cups -->
+    <p><b>Grams to Cups Calculator</b> <br>
+        NOTE: Accuracy of the recipe outcome cannot be
+        guaranteed with this calculator
+      </p>
+    <form>
+      <input type="number" id="grams" placeholder="grams" />
+      <button type="submit" id="calc-button">Calculate!</button>
+    </form>
+    <p id="cups-output">grams is <span id="grams-converted"></span> cup(s)</p>
+    <hr />
+
+    <!-- method -->
+    <h3>Method:</h3>
+    <ol>
+      <li>
+        Preheat oven to 180°C and cut the chocolate into good sized chunks.
+      </li>
+      <li>Mix together the melted butter and sugars until smooth.</li>
+      <li>
+        Add the eggs one at a time, ensuring the eggs are fully combined, then
+        add the vanilla and mix well.
+      </li>
+      <li>Add all the dry ingredients, mix until just combined.</li>
+      <li>
+        Add chocolate and mix until combined. Allow dough to chill for at least
+        1 hour, up to overnight.
+      </li>
+      <li>
+        Make ping-pong ball sized balls of dough, bake for 10-12 mins or until
+        golden.
+      </li>
+    </ol>
+
+    <h3>Notes:</h3>
+    <ul>
+      <li>
+        You can make the cookies whatever size you like, just keep an eye on
+        them and adjust cooking time accordingly.
+      </li>
+      <li>
+        I find this recipe is best when using a bar chocolate that is cut up,
+        but you can use any kind of chocolate.
+      </li>
+      <!-- <li></li> -->
+    </ul>
+
+    <!-- javascript hehe -->
+    <div id="review-box">
+      <h3>Leave me a review!</h3>
+      <form>
+        <label for="name-input">Name:</label>
+        <input
+          type="text"
+          for="name-input"
+          id="name-input"
+          placeholder="Enter your name here"
+        /><br />
+        <label for="star-rating">How many stars do you rate this recipe?</label>
+        <input
+          type="number"
+          name="star-rating"
+          id="star-rating"
+          placeholder="1-5"
+        /><br />
+        <label for="review-text">Type your review here!</label><br />
+        <textarea
+          id="review-text"
+          name="review-text"
+          cols="30"
+          rows="8"
+          placeholder="Tell me what you think!"
+        ></textarea
+        ><br />
+        <button id="review-button" type="submit">Submit!</button>
+        <hr />
+        <p id="review-display"></p>
+      </form>
+    </div>
+  </body>
+</html>

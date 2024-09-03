@@ -1,0 +1,140 @@
+header {
+    font-family: Trebuchet MS;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(181, 155, 248);
+    margin: -20px -40px 0px -40px;
+    padding: 20px;
+}
+
+body {
+    font-family: Trebuchet MS;
+    /* margin:0px; */
+}
+
+/* Adding flex styling to the main body with the left and right containers */
+main {
+    display: flex;
+    /* background-color: blanchedalmond; */
+    font-family: inherit;
+}
+
+/* styling for review elements */
+h4 {
+    margin-top: 0px;
+    margin-bottom: -10px;
+}
+
+/* Styling for the Evan's Recipes h1 element */
+#page-title {
+    font-family: candara;
+    font-size: 60px;
+}
+
+#left {
+    display: flex;
+    width: 20%;
+    /* background-color: rgb(255, 149, 110); */
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    /* border-radius for rounded edges of boxes */
+    border-radius: 20px;
+    margin: 10px;
+    height: 650px;
+    box-sizing: border-box;
+}
+
+/* Right box in main, row wrap to make the imgs wrap when resized */
+#right {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%;
+}
+
+/* styling for the bottom of page review area */
+#review-box {
+    margin-top: 100px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+/* putting space between the submit buton and the reviews */
+#review-button {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* adding margin for all pages except home page */
+.pagestyling {
+    margin: 20px 40px;
+}
+
+
+/* Fixing cat img xyz distance from left and top of page, doesn't move */
+div.catimg {
+    position: fixed;
+    top: 250px;
+    left: 375px;
+}
+
+img {
+    width: 300px;
+}
+
+form {
+    font-family: inherit;
+}
+
+.recipeimg {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+}
+
+/* formatting for the form elements */
+[type=text],
+[type=email],
+[type=number] {
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px solid rgb(71, 20, 202);
+    margin: 8px 0px;
+}
+
+textarea {
+    background-color: inherit;
+    margin: 4px 0px;
+    border: 2px solid rgb(71, 20, 202);
+}
+
+[type=submit] {
+    background-color: rgb(71, 20, 202);
+    color: white;
+    border: none;
+}
+
+/* animation for contact page cat img */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.catimg {
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}

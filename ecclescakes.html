@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <title>Eccles Cakes</title>
+  </head>
+  <header>
+    <h1>Eccles Cakes</h1>
+  </header>
+  <body class="pagestyling">
+    <p>
+      This recipe is for the Eccles Cakes my parents made and sold in their
+      cafes when I was growing up, it was always a hit!
+    </p>
+
+    <h3>Ingredients:</h3>
+    <ul>
+      <li>1 packet of feather flake or puff pastry.</li>
+      <li>400g dried currants</li>
+      <li>35g butter, melted</li>
+      <li>1/2 cup brown sugar, packed</li>
+      <li>1.5 tsp cinnamon</li>
+      <li>White sugar to top</li>
+      <li>Milk, for milk wash</li>
+    </ul>
+
+    <hr />
+    <!-- Calculator to convert g to cups -->
+    <p><b>Grams to Cups Calculator</b> <br>
+      NOTE: Accuracy of the recipe outcome cannot be
+      guaranteed with this calculator
+    </p>
+    <form>
+      <input type="number" id="grams" placeholder="grams" />
+      <button type="submit" id="calc-button">Calculate!</button>
+    </form>
+    <p id="cups-output">grams is <span id="grams-converted"></span> cup(s)</p>
+    <hr />
+
+    <h3>Method:</h3>
+    <ol>
+      <li>
+        The night before; melt the butter, and mix the butter, brown sugar, and
+        cinnamon together into a caramel. Add to the currants and mix. Cover and
+        allow to marinate.
+      </li>
+      <li>Preheat the oven to 180°C. Defrost the pastry.</li>
+      <li>
+        Cut the pastry into squares. Place a few tablespoons of filling and
+        pinch the pastry closed.
+      </li>
+      <li>
+        Turn the eccles cake over so the closing is underneath it, and squish it
+        down into a patty shape.
+      </li>
+      <li>Repeat this process until you have used all of the filling.</li>
+      <li>
+        Place the eccles cakes on a baking tray, allowing space for them to
+        puff.
+      </li>
+      <li>
+        Using a sharp knife, score the top making 3 parallel lines. Brush the
+        tops with milk and sprinkle with white sugar.
+      </li>
+      <li>
+        Bake until golden brown, 15-20 mins. Eccles cakes are best enjoyed warm.
+      </li>
+    </ol>
+
+    <h3>Notes:</h3>
+    <ul>
+      <li>
+        I have found this ratio uses an entire packet of pastry so if you halve
+        it you will have pastry leftover.
+      </li>
+      <li>
+        I tend to use a coarser sugar on top like demerara as I think the
+        texture is nicer, but it doesn't really matter what you use.
+      </li>
+    </ul>
+    <!-- javascript hehe -->
+    <div id="review-box">
+      <h3>Leave me a review!</h3>
+      <form>
+        <label for="name-input">Name:</label>
+        <input
+          type="text"
+          for="name-input"
+          id="name-input"
+          placeholder="Enter your name here"
+        /><br />
+        <label for="star-rating">How many stars do you rate this recipe?</label>
+        <input
+          type="number"
+          name="star-rating"
+          id="star-rating"
+          placeholder="1-5"
+        /><br />
+        <label for="review-text">Type your review here!</label><br />
+        <textarea
+          id="review-text"
+          name="review-text"
+          cols="30"
+          rows="8"
+          placeholder="Tell me what you think!"
+        ></textarea
+        ><br />
+        <button id="review-button" type="submit">Submit!</button>
+        <hr />
+        <p id="review-display"></p>
+      </form>
+    </div>
+  </body>
+</html>
