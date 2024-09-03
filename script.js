@@ -18,7 +18,7 @@ reviewButtonEl.addEventListener(`click`, function (event) {
     starDisplay = `⭐⭐⭐`;
   } else if (+starRatingEl.value === 4) {
     starDisplay = `⭐⭐⭐⭐`;
-  } else if (+starRatingEl.value === 5) {
+  } else if (+starRatingEl.value >= 5) {
     starDisplay = `⭐⭐⭐⭐⭐`;
   } else {
     starDisplay = `No star rating given.`;
