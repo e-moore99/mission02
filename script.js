@@ -37,7 +37,6 @@ reviewButtonEl.addEventListener(`click`, function (event) {
 
 function displayReview() {
   reviewDisplayEl.innerHTML = " ";
-  //attempting to control stars displayed
 
   review.forEach(function (element) {
     console.log(element.reviewerName, element.starRating, element.reviewText);
